@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -80,7 +80,9 @@
         text-align: center;
         cursor: pointer;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        transition: background-color 0.3s, transform 0.2s;
+        transition:
+          background-color 0.3s,
+          transform 0.2s;
       }
 
       .resume-button:hover {
@@ -187,7 +189,8 @@
       }
 
       .work-card {
-        flex: 1 1 calc(30% - 20px);
+        flex: 0 0 calc((100% - 40px) / 3);
+        box-sizing: border-box;
         background-color: #fff;
         padding: 15px;
         text-align: center;
@@ -384,6 +387,23 @@
               />
             </div>
             <h3>
+              Robotics Data Research Annotator @Apple (Contract via Inspyr)
+            </h3>
+            <p>
+              Supported AI research initiatives by testing and evaluating
+              complex datasets used for simulation validation.
+            </p>
+          </div>
+
+          <div class="work-card">
+            <div class="icon-wrapper">
+              <img
+                src="images/preview2.png"
+                alt="Data Annotator"
+                style="width: 140px; height: 140px"
+              />
+            </div>
+            <h3>
               Data Annotator, Software Validation @Outlier.ai (2024 - present)
             </h3>
             <p>
@@ -403,10 +423,10 @@
             </div>
             <h3>Solution Engineer @Cloudflare (2022)</h3>
             <p>
-              Collaborated to build and present an application using Python with
-              Selenium, and Google Slides API. Automated testing website
-              performance and developed a GUI for the application to support
-              both technical and non-technical users.
+              Developed an automated testing framework using Python, Selenium,
+              and Google Slides API to evaluate website performance and
+              auto-generate test result charts, increasing reporting efficiency
+              by 400%
             </p>
           </div>
 
